@@ -1,0 +1,187 @@
+c<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Food menu</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h3 {
+      font-size: 30px;  
+      color: white;
+      margin-top: 20px;
+    }
+
+    h1 {
+      color: yellow;
+      font-size: 45px;
+      font-family: "Courier New", Courier, monospace;
+      margin: 15px;
+    }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+
+    #left_d {
+      width: 20px;
+      height: 250px;
+      background-color: yellow;
+      margin-right: 20px;
+    }
+
+    #food_box {
+      width: 300px;
+      border: 0.5px solid white;
+      background: transparent;
+      color: white;
+      font-size: 18px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+      border-radius: 15px;
+    }
+
+    #food_box ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    #food_box li {
+      margin-bottom: 10px;
+    }
+
+    #food_box li:hover {
+      transition: 1s ease;
+      color: yellow;
+      cursor: default;
+      transform: scale(1.1);
+    }
+
+    #food_head {
+      color: yellow;
+      font-size: 25px;
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #right_bar {
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
+      border-radius: 80px;
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    #right_bar img {
+      width: 90%;
+      height: auto;
+      border-radius: 100%;
+    }
+
+    #right_bar img:hover {
+      transition: 1s ease;
+      transform: scale(1.1);
+    }
+
+    #food_head:hover {
+      transition: 1s ease;
+      transform: scale(1.5);
+      color: aqua;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-decoration: none;
+    }
+
+    /* Optional: style the price */
+    #food_box span {
+      color: yellow;
+      font-weight: bold;
+      float: right;
+    }
+
+    section left_d{
+      float: left;
+    }
+
+    section right_box{
+      float:right;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h3>Aarav's Bistro</h3>
+    <h1>━━Food Menu━━</h1>
+  </center>
+
+  
+  <!-- Breakfast Section -->
+  <div class="section">
+    <div id="left_d"></div>
+    <div id="food_box">
+      <div id="food_head">Breakfast</div>
+      <ul>
+        <li>Poha  <span>₹50</span></li>
+        <li>Upma  <span>₹50</span></li>
+        <li>Idli (2 pcs)  <span>₹60</span></li>
+        <li>Dosa  <span>₹80</span></li>
+        <li>Puri Bhaji  <span>₹70</span></li>
+      </ul>
+    </div>
+    <div id="right_bar">
+      <img src="1000_F_329972175_wDj87EhiupfFngsQBVGYx4x0BkfjWe7J (2).jpg" alt="Breakfast">
+    </div>
+  </div>
+
+  <!-- Soup Section -->
+  <div class="section">
+    <div id="left_d"></div>
+    <div id="food_box">
+      <div id="food_head">Soup</div>
+      <ul>
+        <li>Tomato Soup  <span>₹60</span></li>
+        <li>Hot & Sour Soup  <span>₹80</span></li>
+        <li>Sweet Corn Soup  <span>₹70</span></li>
+        <li>Manchow Soup  <span>₹80</span></li>
+        <li>Cream of Mushroom Soup  <span>₹90</span></li>
+      </ul>
+    </div>
+    <div id="right_bar">
+      <img src="download.jpg" alt="Soup">
+    </div>
+  </div>
+
+  <!-- Main Course Section -->
+  <div class="section">
+    <div id="left_d"></div>
+    <div id="food_box">
+      <div id="food_head">Main Course</div>
+      <ul>
+        <li>🍛 Paneer Butter Masala  <span>₹180</span></li>
+        <li>🍚 Veg Biryani  <span>₹150</span></li>
+        <li>🍜 Hakka Noodles  <span>₹120</span></li>
+        <li>🥘 Dal Tadka  <span>₹100</span></li>
+        <li>🍞 Butter Naan (2 pcs)  <span>₹50</span></li>
+      </ul>
+    </div>
+    <div id="right_bar">
+      <img src="Hakka-Noodles-Recipe.jpg" alt="Main Course">
+    </div>
+</body>
+
+</html>
